@@ -1,0 +1,75 @@
+{
+  "dependencies": {
+    "microservice-config": {
+      "url": "github.com:vicjicaman/microservice-config.git",
+      "version": "1.70.1-master"
+    }
+  },
+  "config": [
+    {
+      "name": "SERVICE_GRAPH",
+      "value": "account-graph-service",
+      "type": "id"
+    },
+    {
+      "name": "DEPLOYMENT_GRAPH",
+      "value": "account-graph-deployment",
+      "type": "id"
+    },
+    {
+      "name": "DATABASE",
+      "value": "accounts",
+      "type": "string"
+    },
+    {
+      "name": "BASE_ROUTE",
+      "value": "/",
+      "type": "path"
+    },
+    {
+      "name": "ROUTE_GRAPH",
+      "value": "${BASE_ROUTE}graphql",
+      "type": "route"
+    },
+    {
+      "name": "INTERNAL_PORT_GRAPH",
+      "value": 4000,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_HOST_BACKEND",
+      "value": "${SERVICE_GRAPH}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "INTERNAL_URL_GRAPH",
+      "value": "${INTERNAL_HOST_BACKEND}:${INTERNAL_PORT_GRAPH}${ROUTE_GRAPH}",
+      "type": "url"
+    },
+    {
+      "name": "SERVICE_DATA",
+      "value": "auth-data-service",
+      "type": "id"
+    },
+    {
+      "name": "STATEFUL_DATA",
+      "value": "auth-data-set",
+      "type": "id"
+    },
+    {
+      "name": "INTERNAL_HOST_DATA",
+      "value": "${SERVICE_DATA}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "INTERNAL_PORT_DATA",
+      "value": 27017,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_URL_DATA",
+      "value": "${INTERNAL_HOST_DATA}:${INTERNAL_PORT_DATA}/${DATABASE}",
+      "type": "url"
+    }
+  ]
+}

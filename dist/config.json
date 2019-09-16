@@ -1,0 +1,54 @@
+{
+  "SERVICE_GRAPH": {
+    "value": "account-graph-service",
+    "type": "id"
+  },
+  "DEPLOYMENT_GRAPH": {
+    "value": "account-graph-deployment",
+    "type": "id"
+  },
+  "DATABASE": {
+    "value": "accounts",
+    "type": "string"
+  },
+  "BASE_ROUTE": {
+    "value": "/",
+    "type": "path"
+  },
+  "ROUTE_GRAPH": {
+    "value": "/graphql",
+    "type": "route"
+  },
+  "INTERNAL_PORT_GRAPH": {
+    "value": 4000,
+    "type": "port"
+  },
+  "INTERNAL_HOST_BACKEND": {
+    "value": "account-graph-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_URL_GRAPH": {
+    "value": "account-graph-service.microservices-namespace:4000/graphql",
+    "type": "url"
+  },
+  "SERVICE_DATA": {
+    "value": "auth-data-service",
+    "type": "id"
+  },
+  "STATEFUL_DATA": {
+    "value": "auth-data-set",
+    "type": "id"
+  },
+  "INTERNAL_HOST_DATA": {
+    "value": "auth-data-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_PORT_DATA": {
+    "value": 27017,
+    "type": "port"
+  },
+  "INTERNAL_URL_DATA": {
+    "value": "auth-data-service.microservices-namespace:27017/accounts",
+    "type": "url"
+  }
+}
