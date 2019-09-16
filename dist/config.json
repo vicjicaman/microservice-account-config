@@ -28,7 +28,7 @@
     "type": "host"
   },
   "INTERNAL_URL_GRAPH": {
-    "value": "account-graph-service.microservices-namespace:4000/graphql",
+    "value": "http://account-graph-service.microservices-namespace:4000/graphql",
     "type": "url"
   },
   "SERVICE_DATA": {
