@@ -43,7 +43,7 @@
     },
     {
       "name": "INTERNAL_URL_GRAPH",
-      "value": "${INTERNAL_HOST_BACKEND}:${INTERNAL_PORT_GRAPH}${ROUTE_GRAPH}",
+      "value": "http://${INTERNAL_HOST_BACKEND}:${INTERNAL_PORT_GRAPH}${ROUTE_GRAPH}",
       "type": "url"
     },
     {
