@@ -30,25 +30,5 @@
   "INTERNAL_URL_GRAPH": {
     "value": "http://account-graph-service.microservices-namespace:4000/graphql",
     "type": "url"
-  },
-  "SERVICE_DATA": {
-    "value": "auth-data-service",
-    "type": "id"
-  },
-  "STATEFUL_DATA": {
-    "value": "auth-data-set",
-    "type": "id"
-  },
-  "INTERNAL_HOST_DATA": {
-    "value": "auth-data-service.microservices-namespace",
-    "type": "host"
-  },
-  "INTERNAL_PORT_DATA": {
-    "value": 27017,
-    "type": "port"
-  },
-  "INTERNAL_URL_DATA": {
-    "value": "auth-data-service.microservices-namespace:27017/accounts",
-    "type": "url"
   }
 }
