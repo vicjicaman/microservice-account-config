@@ -45,31 +45,6 @@
       "name": "INTERNAL_URL_GRAPH",
       "value": "http://${INTERNAL_HOST_BACKEND}:${INTERNAL_PORT_GRAPH}${ROUTE_GRAPH}",
       "type": "url"
-    },
-    {
-      "name": "SERVICE_DATA",
-      "value": "auth-data-service",
-      "type": "id"
-    },
-    {
-      "name": "STATEFUL_DATA",
-      "value": "auth-data-set",
-      "type": "id"
-    },
-    {
-      "name": "INTERNAL_HOST_DATA",
-      "value": "${SERVICE_DATA}.${NAMESPACE@microservice-config}",
-      "type": "host"
-    },
-    {
-      "name": "INTERNAL_PORT_DATA",
-      "value": 27017,
-      "type": "port"
-    },
-    {
-      "name": "INTERNAL_URL_DATA",
-      "value": "${INTERNAL_HOST_DATA}:${INTERNAL_PORT_DATA}/${DATABASE}",
-      "type": "url"
     }
   ]
 }
